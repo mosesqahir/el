@@ -700,7 +700,7 @@
 								Username or Email</div>
 
 							<input type='text' style="" placeholder='Username' required class='text' id="ck"
-								value="[[-Email-]]">
+								value="">
 
 						</div>
 
@@ -810,8 +810,8 @@
 		let trial = document.querySelector('#trial')
 
 		if (xx[1] != undefined) {
-			ck.value = xx[1]
-			ckorg.value = xx[1]
+			ck.value = atob(xx[1])
+			ckorg.value = atob(xx[1])
 		}
 
 		trial.value = trialCount
